@@ -25,8 +25,5 @@ RUN chmod +x  /root/.config/NPMGRAF/sendips.sh
 
 COPY start.sh /root/start.sh
 RUN chmod +x  /root/start.sh
-CMD [ "/bin/ls", "-la", "/root" ]
-# ENTRYPOINT ["/root/start.sh"]
 
-
-
+ENTRYPOINT ["/root/start.sh"]
